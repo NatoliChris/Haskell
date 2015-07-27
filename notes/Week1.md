@@ -68,3 +68,23 @@ b = 3 : (1 : [])
 c = 2 : 3 : 4 : []
 
 ```
+
+####Functions on lists
+Lists can be utilised in functions, they can make operations or additions
+e.g.
+
+```haskell
+
+intListLength :: [Integer] -> Integer
+intListLength [] = 0
+intListLength (x:xs) = 1 + intListLength xs
+
+```
+
+##Important notes:
+
+**Sum Function**
+
+* The sum function ``sum [list]`` computes the sum of the numbers of a structure.
+* The concatmap function ``concatMap`` maps a function over all the elements of a container and concatenate the resulting lists.
+
