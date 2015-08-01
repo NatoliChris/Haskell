@@ -1,7 +1,7 @@
 --Homework 01
 --http://www.seas.upenn.edu/~cis194/spring13/hw/01-intro.pdf
 
-main = print(sumDigits [16,7,12,5])
+main = print(hanoi 2 "a" "b" "c")
 
 --Convert a positive integer into a list of integers
 toDigitsRev :: Integer -> [Integer]
@@ -27,4 +27,12 @@ sumDigits = sum . concatMap toDigits
 
 --Validating the numbers
 --validate :: Integer -> Bool
+
+-- Towers of Hanoi 
+-- Move each to a peg, only one at a time.
+type Peg = String
+type Move = (Peg, Peg)
+hanoi :: Integer -> Peg -> Peg -> Peg -> [Move]
+hanoi 0 _ _ _ = []
+hanoi n a b c = hanoi (n-1) a c b ++ [(a, b)] ++ hanoi (n-1) c b a
 

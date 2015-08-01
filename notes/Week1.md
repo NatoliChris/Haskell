@@ -1,4 +1,4 @@
-#Notes from first lecture
+#Week 1
 
 ####Variables
 Variables assigned like this:
