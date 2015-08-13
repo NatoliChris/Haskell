@@ -12,6 +12,9 @@
   * 2 /= 5
 * Special Keyword *not* is negate like ! in most languages
 * Mixing values can lead to Many things
+* Functions in Haskell don't have to be defined in any particular order
+* In Haskell, the *else* part is **Mandatory** in an if statement
+* An apostrophe after a function name ( ``something'`` ) means that it is a **strict** version of the function
 
 ##Calling Functions
 * *infix* - sandwiching function call between numbers with backticks! **`**
