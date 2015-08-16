@@ -53,8 +53,6 @@ In Hasell, it iterates through the list making comparisons with each index and d
 
 ##More list operations
 
-###Head function
-Takes the head of the list, (the first element)
 ```haskell
 --Note: they will give errors if they work with empty list
 head [5,4,3,2,1] = 5
