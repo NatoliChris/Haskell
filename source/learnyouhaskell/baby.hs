@@ -9,4 +9,7 @@ doubleSmallNumber x = if x > 100
                       then x 
                       else x * 2
 
+-- Note: the ' means that it is a strict implementation
+doubleSmallNumber' x = (if x > 100 then x else x*2) + 1
+
 

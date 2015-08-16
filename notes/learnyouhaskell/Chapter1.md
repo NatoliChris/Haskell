@@ -34,3 +34,5 @@ min 9 10
 succ 9 * 10 -- Will give 101 [succ 9 = 10] * 10
 succ (9 * 10) -- Will correctly give 91
 ```
+
+
