@@ -136,5 +136,41 @@ Note: **Underscores** are used as a temporary variable to store items we don't r
 You can split list comprehensions across several lines to improve readability! 
 
 ##Tuples
+In some ways, Tuples are a lot like lists, but there are fundamental differences:
+
+1. Tuples are heterogeneous - single tuple can store elements of different types.
+2. Tuples have a fixed size - need to know how many elements prior to storing.
+
+```haskell
+(1,3)
+(3, 'a', "hello, world")
+```
+* Tuples of different sizes:
+    * Size of two is called a *pair*
+    * Size of three is called a *triple*
+    * These are treated as two distinct types
+* Vectors can be a list of tuples:
+    * Note: this ensures that we have pairs not triples or any more numbers used to give errors
+```haskell
+--From
+[[1,2], [8,11], [4,5]]
+[(1,2), (8, 11), (4,5)]
+```
+
+##Using Pairs
+Storing data in pairs is very common in Haskell, there are some useful functions in place to manipulate:
+
+```haskell
+fst (8,11) => 8 -- Return first element of the pair
+snd (8,11) => 11 -- Returns the second element of the pair
+```
+
+* These functions only work on pairs, they don't work on 4-tuples or 5-tuples.
+* The **ZIP** function is a cool way to produce a list of pairs. It zips the two lists together
+
+```haskell
+zip [1,2,3,4,5] [5,5,5,5,5]
+=> [(1,5), (2,5), (3,5), (4,5), (5,5)]
+```
 
 
